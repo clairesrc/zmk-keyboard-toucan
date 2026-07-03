@@ -30,7 +30,7 @@ echo "::group::west zephyr-export"
 echo "::endgroup::"
 
 case "$TARGET" in
-  left)           SHIELDS="toucan_left rgbled_adapter" ;;  # toucan_pet omitted: its LVGL8 widgets need porting to LVGL9
+  left)           SHIELDS="toucan_left rgbled_adapter toucan_view" ;;
   right)          SHIELDS="toucan_right rgbled_adapter" ;;
   dongle)         SHIELDS="toucan_dongle rgbled_adapter prospector_adapter" ;;
   settings_reset) SHIELDS="settings_reset" ;;

@@ -68,6 +68,11 @@
         status = "disabled";
         device = <&glidepoint_split>;
         input-processors = <&zip_x_scaler (-250) 100 &zip_y_scaler 250 100>;
+        right_click_on_nav {
+            layers = <1>;
+            process-next;
+            input-processors = <&right_click_mapper>;
+        };
         scroller {
             layers = <1 2>;
             input-processors = <
@@ -77,5 +82,11 @@
                 &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
             >;
         };
+    };
+    /omit-if-no-ref/ right_click_mapper: right_click_mapper {
+        compatible = "zmk,input-processor-code-mapper";
+        #input-processor-cells = <0>;
+        type = <INPUT_EV_KEY>;
+        map = <INPUT_BTN_TOUCH INPUT_BTN_1>;
     };
 };

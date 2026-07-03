@@ -1,0 +1,6 @@
+file_format: "1"
+id: toucan_view
+name: Toucan View
+type: shield
+features:
+  - display
