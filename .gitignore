@@ -1,0 +1,6 @@
+# Local ZMK build workspace (west tree, ~GBs)
+.zmk-workspace/
+# Build output directory
+build-output/
+# Prebuilt firmware binaries (rebuild via the build-*.sh scripts)
+firmware/

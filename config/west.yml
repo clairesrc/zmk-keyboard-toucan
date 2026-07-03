@@ -33,9 +33,5 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: main
-    - name: zmk-dongle-screen
-      remote: albertclee
-      revision: claude/enhance-wpm-meter-y9Hrb
-      
   self:
     path: config
