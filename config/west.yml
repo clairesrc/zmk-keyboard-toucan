@@ -1,37 +1,24 @@
 manifest:
   defaults:
-    revision: v0.3
+    revision: main
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
-    - name: albertclee
-      url-base: https://github.com/alee0729
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: carrefinho
       url-base: https://github.com/carrefinho
-    - name: prospector
-      url-base: https://github.com/t-ogura
-    - name: geeksville
-      url-base: https://github.com/geeksville
-    - name: janpfischer
-      url-base: https://github.com/Dexter-KBD
 
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: main
       import: app/west.yml
-    - name: cirque-input-module
-      remote: geeksville
-      revision: toucan
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: v0.3
+      revision: main
     - name: prospector-zmk-module
       remote: carrefinho
-      revision: main
+      revision: feat/new-status-screens
   self:
     path: config

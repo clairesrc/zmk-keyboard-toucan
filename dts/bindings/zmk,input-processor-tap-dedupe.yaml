@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+description: >
+  Edge-trigger BTN_TOUCH events so only real press/release transitions are
+  forwarded (dedupes the redundant per-sample button events the mainline Cirque
+  driver emits over the ZMK split link).
+compatible: "zmk,input-processor-tap-dedupe"
+
+include: ip_zero_param.yaml
